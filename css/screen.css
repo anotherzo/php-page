@@ -1,0 +1,550 @@
+/* colors:
+    dark red: #982319
+    red: #D6002A
+    back_dark: #DAEBC6
+    back_light: #F3F9ED
+*/
+
+/* global formats */
+
+body {
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-family: Verdana, Helvetica, sans-serif;
+    background: url(../img/layout/back.png) repeat-y;
+	/*height: 750px;*/
+	line-height: 13pt;
+	/*overflow: hidden;*/
+}
+
+#sortable { list-style-type: none; margin: 0; padding: 0; }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+span.german, div.german {
+}
+
+span.german_b, div.german_b {
+    font-weight: bold;
+}
+
+span.english, div.english {
+    font-style: italic;
+}
+
+span.english_b, div.english_b {
+    font-style: italic;
+    font-weight: bold;
+}
+
+span.quote p:before, div.quote p:before { content:"\201E"; }
+span.quote p:after, div.quote p:after { content:"\201D"; }
+span.doublepoint:after, div.doublepoint:after { content:":"; }
+
+table {
+    padding: 0px;
+    margin: 0px;
+}
+
+b { font-weight: bold; }
+
+h1 {
+    font-size: 13pt;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 11pt;
+}
+
+h3 {
+    font-size: 9pt;
+    line-height: 13pt;
+    margin: 0px;
+}
+
+table.content {
+    margin: 0px;
+    padding: 0px;
+}
+
+table.content td.contentframe {
+    padding: 0px;
+    margin: 0px;
+    text-align: top;
+}
+
+div.holidays {
+    display: none;
+}
+
+/* header */
+div.head {
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -8px;
+    background: url(../img/layout/headback.png);
+}
+
+div.head_top {
+    background: url(../img/layout/ribbon_top.png);
+    height: 60px;
+}
+
+div.head_text {
+    font-size: 16pt;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 68mm;
+    white-space: nowrap;
+}
+
+div.head_bottom {
+    background: url(../img/layout/ribbon_bottom.png) repeat-x;
+    height: 22px;
+    padding-bottom: 15px;
+}
+
+/* menu */
+div.menu {
+    vertical-align: top;
+    font-size: 11pt;
+    line-height: 13pt;
+    width: 61mm;
+    height: 716px;
+    margin-top: -10px;
+}
+
+div.menu div.measure img { 
+}
+
+div.menu div.logo {
+    padding-top: 8mm;
+}
+
+div.menu div.logo img {
+    width: 36mm;
+}
+
+div.menu p.address {
+    font-size: 9pt;
+}
+
+div.menu p span.de {
+    color: #982319;
+}
+
+div.menu p span.en {
+    font-style:italic;
+    color: #D6002A;
+}
+
+div.menu p.active span.de {
+    font-weight: bold;
+}
+
+div.menu p.active span.en {
+    font-weight: bold;
+}
+
+div.menu div.space {
+    height: 8mm;
+}
+
+/* content */
+div.content {
+    vertical-align: top;
+    width: 1100px;
+    padding-top: 4mm;
+    padding-left: 5mm;
+    height: 700px;
+    overflow: auto;
+}
+
+div.content p.start {
+    text-align: center;
+    color: black;
+}
+
+div.content img.startpic {
+    width: 900px;
+    border: none;
+    margin-top: 30px;
+}
+
+div.content table.pageitem {
+    font-size: 9pt;
+    line-height: 13pt;
+    border-collapse: separate;
+}
+
+div.content table.pageitem tr {
+    text-align: left;
+    vertical-align: top;
+}
+
+div.content table.pageitem th.left {
+    width: 51mm;
+    font-size: 11pt;
+    line-height: 13pt;
+    /*padding-top: 4pt;*/
+	color: #444;
+}
+
+
+div.content table.pageitem th.left p {
+    margin: 0px;
+}
+
+div.content table.pageitem th.leftimg {
+    width: 53mm;
+    text-align: center;
+}
+
+div.content table.pageitem th.leftimg img {
+    width: 35mm;
+    height: 42mm;
+}
+
+table.pageitem td.right {
+    width: 112mm;
+    padding-left: 5mm;
+}
+
+table.pageitem td.middle {
+    width: 112mm;
+    padding-left: 5mm;
+}
+
+table.pageitem td ul {
+    list-style-type: disc;
+}
+
+table.pageitem td ul li {
+    margin-left: -25px;
+}
+
+table.pageitem p {
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+table.pageitem td.hline_long {
+    height: 15px;
+    background: url(../img/layout/hline_long.png) no-repeat;
+}
+
+/* flags */
+
+div.content table.pageitem td.flag img {
+    width: 12mm;
+    height: 8mm;
+    border: 1px solid #DAEBC6;
+}
+
+div.content table.pageitem td.flag {
+    width: 20mm;
+    height: 12mm;
+}
+
+div.content table.pageitem tr.flag td.controls {
+    width: 10px;
+}
+
+div.content table.pageitem tr.flag a {
+    text-decoration: none;
+}
+
+div.content div.flags {
+    width: 800px;
+    padding-left: 10mm;
+}
+
+div.content div.flags li {
+    float: left;
+}
+
+/* catlist */
+
+div.content table.catitem {
+    font-size: 9pt;
+    line-height: 13pt;
+    border-collapse: separate;
+    vertical-align: top;
+}
+
+table.catitem a {
+    color: black;
+}
+
+div.content table.catitem tr {
+    text-align: left;
+    vertical-align: top;
+    padding: 0px;
+    margin: 0px;
+}
+
+div.content table.catitem th.left {
+    width: 53mm;
+    font-size: 11pt;
+}
+
+div.content table.catitem th.left a {
+color: #444;
+}
+
+div.content table.catitem th.left p {
+    margin: 0px;
+}
+
+table.catitem td {
+    margin: 0mm;
+    padding: 0mm;
+    line-height: 13pt;
+}
+
+table.catitem td.right {
+    width: 112mm;
+    padding-left: 5mm;
+    vertical-align: top;
+}
+
+table.catitem td.middle {
+    width: 112mm;
+    padding-left: 5mm;
+    vertical-align: top;
+}
+
+table.catitem td p {
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+table.catitem tr.prodListItem {
+    padding: 0px;
+    margin: 0px;
+    height: 13pt;
+}
+
+table.catitem td.hline_long {
+    height: 15px;
+    background: url(../img/layout/hline_long.png) no-repeat;
+}
+
+table.prodListSmall {
+}
+
+table.prodListSmall td {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 200px;
+}
+
+/* product, details */
+
+#products_sortable {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#products_sortable li.lisort {
+    float: left;
+    width: 143mm;
+    height: 280px;
+}
+
+li.hlinerule {
+    float: left;
+    width: 1024px;
+    height: 25px;
+    background: url(../img/layout/hline_long.png) no-repeat;
+}
+
+table.product {
+    font-size: 9pt;
+    line-height: 13pt;
+}
+
+table.product a {
+    color: black;
+    text-decoration: none;
+}
+
+table.product td {
+    vertical-align: top;
+}
+
+table.product td.img {
+    width: 40mm;
+    height: 56mm;
+}
+
+table.product td.img img {
+    width: 152px;
+    border: 1px solid #DAEBC6;
+}
+
+table.product td.proddesc {
+    padding-left: 5mm;
+}
+
+table.product td.proddesc p {
+    padding: 0px;
+    margin: 0px;
+}
+
+table.product td.proddesc div.desc_cd {
+    height: 122px;
+    width: 330px;
+}
+
+/* examples */
+
+td.exampleImg img.exampleImg {
+    width: 141mm;
+    border: 1px solid #DAEBC6;
+}
+
+div.content div.examples {
+}
+
+div.content div.examples li {
+    float: left;
+}
+
+/* shop */
+
+div.tableContainer {
+    clear: both;
+    height: 680px;
+    overflow: auto;
+    width: 700px;
+}
+
+html>body div.tableContainer {
+    overflow: hidden;
+    width: 700px;
+}
+
+div.tableContainer table {
+    float: left;
+    width: 695px;
+    font-size: 9pt;
+    line-height: 13pt;
+}
+
+div.tableContainer table td.hline_shop {
+    height: 15px;
+    background: url(../img/layout/hline_long.png) no-repeat;
+}
+
+div.tableContainer table tr.hline_shop {
+    height: 50px;
+    background: url(../img/layout/hline_long.png) no-repeat bottom;
+}
+
+html>body div.tableContainer table {
+    width: 700px;
+}
+
+table.fixedHeader tr {
+    position: relative;
+}
+
+html>body table.fixedHeader tr {
+    display: block;
+}
+
+table.fixedHeader th {
+    font-weight: bold;
+    text-align: left;
+}
+
+html>body div.scrollContentDiv {
+    height: 630px;
+    width: 100%;
+    overflow: auto;
+}
+
+html>body table.scrollContent {
+    display: block;
+    overflow: auto;
+    width: 100%;
+}
+
+html>body table.fixedHeader th, html>body table.scrollContent td {
+    margin: 0px;
+    padding: 0px;
+    padding-right: 15px;
+}
+
+html>body table.fixedHeader th.amount, html>body table.scrollContent td.amount {
+    width: 55px;
+}
+
+html>body table.fixedHeader th.money, html>body table.scrollContent td.money  {
+    width: 35px;
+}
+
+html>body table.scrollContent td.money {
+    text-align: right;
+}
+
+html>body table.fixedHeader th.nr, html>body table.scrollContent td.nr {
+    width: 55px;
+}
+
+html>body table.fixedHeader th.nr {
+	padding-left: 25px;
+	width: 30px;
+}
+
+html>body table.scrollContent td.nr {
+    text-align: right;
+}
+
+html>body table.fixedHeader th.title {
+
+}
+
+html>body table.scrollContent td.title {
+}
+
+html>body table.scrollContent td.cattitle {
+}
+
+
+
+table.shop td.shopform {
+    padding-left: 30px;
+    font-size: 9pt;
+    line-height: 13pt;
+    vertical-align: top;
+}
+
+table.shop td.shopform input {
+    padding: 0px;
+    margin: 0px;
+}
+
+table.shop td.shopform input.i1 {
+    width: 147px;
+}
+
+table.shop td.shopform input.i2 {
+    width: 300px;
+}
+
+table.shop td.shopform input.i3 {
+    width: 244px;
+}
+
+table.shop td.shopform input.i4 {
+    width: 50px;
+}
